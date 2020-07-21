@@ -1,0 +1,1 @@
+# HAR-activity-recognition-smartphone
