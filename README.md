@@ -1,4 +1,16 @@
-HAR实现系统说明文档：
+Human Activity Recognition implementation instructions:
+
+The acc-gyro folder contains the program to collect data. Data in this repository is collected by using the left hand to hold a cell phone and the sampling frequency is 50Hz. AtimeSs is the accelerometer data collector timestamp, and GtimeSs is the gyroscope data collector timestamp. Gender variable: 0 is Female and 1 is Male.
+
+The algorithm is in code.ipynb. hhyHAR_6data.csv is the training dataset consisting of 4 activities: label 0 is jumping jacks, 1 is deep squat, 2 is 合掌跳 (closed palm jump) and 3 is high leg raise. The number of this data is comparatively small and the label distribution is imbalanced. Using LSTM, CNN, MLP, Random Forest, and Naive Bayes can achieve good classification performance. 
+
+We use JavaScript to rewrite the MLP algorithms in the .js file to allow off-line real-time classification.
+
+
+
+
+
+HAR实现系统说明文档(2020)：
 
 acc-gyro文件夹是采集数据的小程序，为左手持手机，采样频率50Hz。AtimeSs是加速计采集数据时间戳，GtimeSs是陀螺仪采集数据时间戳。gender：女 0  男 1。
 
